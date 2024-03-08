@@ -117,7 +117,7 @@ button {
 .mk{
   position: relative;
   padding: 12px 35px;
-  background:-webkit-linear-gradient( 45deg, rgb(217, 204, 65) 0%, rgb(222, 196, 68) 35%, rgb(136, 233, 40) 100%);
+  background:-webkit-linear-gradient( 45deg, rgb(206, 191, 20) 0%, rgb(225, 191, 16) 35%, rgba(183, 183, 29, 0.919) 100%);
   font-size: 17px;
   font-weight: 500;
   color: #181818;
