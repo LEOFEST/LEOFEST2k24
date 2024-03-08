@@ -108,7 +108,7 @@ button {
   font-size: 17px;
   font-weight: 500;
   color: #181818;
-  border: 3px solid #fec195;
+  border: 3px solid  #fec195;
   border-radius: 8px;
   box-shadow: 0 0 0 #fec1958c;
   transition: all 0.3s ease-in-out;
@@ -117,7 +117,7 @@ button {
 .mk{
   position: relative;
   padding: 12px 35px;
-  background:-webkit-linear-gradient( 90deg, rgb(217, 204, 65) 0%, rgb(222, 196, 68) 35%, rgb(136, 233, 40) 100%);
+  background:-webkit-linear-gradient( 45deg, rgb(217, 204, 65) 0%, rgb(222, 196, 68) 35%, rgb(136, 233, 40) 100%);
   font-size: 17px;
   font-weight: 500;
   color: #181818;
