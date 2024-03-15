@@ -103,18 +103,33 @@
         
       </section>
       <section>
-        <button class="cta-btn">Register</button>
+        <button class="button-71" role="button">Member-ID Register</button>
       </section>
-
+<br><br>
       <section>
         <footer id="footer">
                 <h4>Registration Process</h4>
 
-                <p>▶  Click the "Register" button to access the Google Form for registration.
+                <p>▶  Click the "Member-ID Register" button to access the Google Form for Member-ID registration(First of all you must fill the Member-ID Registration google form and Join us Member in LEOFEST'24).
                   <br><BR>
                    ▶  After completing the form, you'll receive a Member-ID via email. Use this Member-ID for future event registrations.
                    <br><BR>
-                   ▶  For team events, only the team leader should register using their Member-ID on the respective event pages.<br><br>
+                   ▶  For team events, only the team leader should register using their Member-ID on the respective event google form.<br><br>
+   <h1 style="margin:10px;font-size: 30px;color: whitesmoke;">Events Google Form</h1>
+                   <div style=" border: 5px solid white; height: 300px ;width: 200%;padding 100rem; margin: 20px;"><br><br><br><br><br><br>
+              
+                   <button class="button-78" id="b1" role="button">Paper Presentation</button>
+                   <button class="button-78" id="b2" role="button">Ideathon</button>
+                   <button class="button-78" id="b3" role="button">Fixit Fest</button>
+                   <button class="button-78" id="b4" role="button">Design Fiesta</button>
+                   <button class="button-78" id="b5"  role="button">RoboRevolt</button><br><br>
+                   <button class="button-78" id="b6"  role="button">Bidding Bash</button>
+                   <button class="button-78" id="b7" role="button">Cinephillia</button>
+                   <button class="button-78"id="b8" role="button">Sketch The Art </button>
+                   <button class="button-78" id="b9" role="button">Mystery Unearthed</button>
+                   <button class="button-78" id="b10" role="button">Action & Cut</button>
+                   <button class="button-78" id="b11" role="button">Meme-A-Thon</button><br><br><br>
+                   </div><p>
                    ▶  If you need additional lunch tokens, please contact us for further assistance.<br><br>
 
                    ▶  For accommodation, visit the accommodation page.
@@ -259,25 +274,88 @@ body {
   padding: 12px;
   border-radius: 4px;
   border: 1px solid #0891b2;
-  background:linear-gradient(45deg,#0891b2,#059669);
+  background: linear-gradient(45deg, #0891b2, #059669);
   color: #e4e4e7;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
 }
-.cta-btn:active {
+
+/* Add active state for the button */
+.cta-btn:active,
+.cta-btn:focus {
   background-color: transparent;
   color: var(--col);
   transition: all 0.3s ease;
+  outline: none; /* Remove default outline on focus */
+}
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 76px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .8s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 225px;
+  content: "";
+  height: 60%;
+  left: 3%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
 }
 
 
 
+@media screen and (max-width: 576px) {
+
+/* Additional CSS for footer */
+#footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.button-78 {
+  margin: 2px;
+  padding: 7px 14px;
+  font-size: 5px;
+}
 </style>
 
 <script>
      document.addEventListener("DOMContentLoaded", function() {
         // Find the button element
-        var registerButton = document.querySelector('.cta-btn');
+        var registerButton = document.querySelector('.button-71');
         
         // Add a click event listener to the button
         registerButton.addEventListener('click', function() {
@@ -310,6 +388,117 @@ bars.addEventListener('click',function(){
       navbar.classList.remove('slide');
   }
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b1');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://forms.gle/SGBvDDPYXqu1mfRE9'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b2');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://forms.gle/Q1T8AkCXGbqaCLRv7'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b3');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://forms.gle/A1e9sRtY69n11Hgv5'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b4');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://forms.gle/nYsjnJ5x3s2hG2uGA'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b5');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://forms.gle/HNVmm4obET9FzWbi7'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b6');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeaGot5znGp3Kc-HWkM8X9kZK4ycHWoIuTyONOgQzo1F9v1IQ/viewform?usp=sharing'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b7');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeXZCMzouV-FFcXAqGLDukSboArYJshBXqAdx7lYIV5UdaiTg/viewform?usp=sharing'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b8');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdrW3PITRE0-jqLLjkN1B8y3VxJzLUSBlvZXzhvpC6EvDxpLA/viewform?usp=sharing'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b9');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeyhgCepXzHjDOvmwZQD15Em13F-4zsaHLZGHw2P_QLn2PDgw/viewform?usp=sharingL'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b10');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdQsFBHL3bFv0XXUJKM4PJsLFuodIls-SNLxQonjL7v1d2Hrg/viewform?usp=sharing'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('#b11');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSckEuThcAYI9T3cAl3hGvhQ__4U-FGhlmpuPPca1_Q6bTXUow/viewform?usp=sharing'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
 </script>
 <script>
 
