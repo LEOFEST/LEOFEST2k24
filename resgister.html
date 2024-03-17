@@ -103,21 +103,19 @@
         
       </section>
       <section>
-        <button class="button-71" role="button">Member-ID Register</button>
+        <button class="button-71" role="button">      Internal Registration    </button> <br><br><button class="button-72" role="button" >External Member-ID Registration</button>
       </section>
 <br><br>
       <section>
         <footer id="footer">
                 <h4>Registration Process</h4>
-
                 <p>▶  Click the "Member-ID Register" button to access the Google Form for Member-ID registration(First of all you must fill the Member-ID Registration google form and Join us Member in LEOFEST'24).
                   <br><BR>
                    ▶  After completing the form, you'll receive a Member-ID via email. Use this Member-ID for future event registrations.
                    <br><BR>
                    ▶  For team events, only the team leader should register using their Member-ID on the respective event google form.<br><br>
-   <h1 style="margin:10px;font-size: 30px;color: whitesmoke;">Event Google Forms</h1>
+   <h1 style="margin:10px;font-size: 30px;color: whitesmoke;">External Event Google Forms</h1>
                    <div style=" border: 5px solid white; height: 300px ;width: 200%;padding 100rem; margin: 20px;"><br><br><br><br><br><br>
-              
                    <button class="button-78" id="b1" role="button">Paper Presentation</button>
                    <button class="button-78" id="b2" role="button">Ideathon</button>
                    <button class="button-78" id="b3" role="button">Fixit Fest</button>
@@ -306,6 +304,7 @@ body {
   text-decoration: none;
   transition: all .8s;
   user-select: none;
+  width: 100%;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
@@ -335,6 +334,51 @@ body {
   }
 }
 
+.button-72 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 76px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .8s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-72:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 225px;
+  content: "";
+  height: 60%;
+  left: 3%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-72:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-72 {
+    padding: 16px 48px;
+  }
+}
 
 
 @media screen and (max-width: 576px) {
@@ -355,7 +399,7 @@ body {
 <script>
      document.addEventListener("DOMContentLoaded", function() {
         // Find the button element
-        var registerButton = document.querySelector('.button-71');
+        var registerButton = document.querySelector('.button-72');
         
         // Add a click event listener to the button
         registerButton.addEventListener('click', function() {
@@ -363,7 +407,16 @@ body {
             window.location.href = 'https://forms.gle/XxRyiZEU7XL4pzpK8'; // Replace 'next-page.html' with the URL of your next page
         });
     });
-  
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the button element
+        var registerButton = document.querySelector('.button-71');
+        
+        // Add a click event listener to the button
+        registerButton.addEventListener('click', function() {
+            // Perform navigation to the next page
+            window.location.href = 'internal.html'; // Replace 'next-page.html' with the URL of your next page
+        });
+    });
     document.addEventListener("DOMContentLoaded", function() {
         // Find the button element
         var registerButton = document.querySelector('#btn');
