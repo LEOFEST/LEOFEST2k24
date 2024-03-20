@@ -16,7 +16,7 @@
     <section class="events" id="events">
         <section class="events" id="events">
             <div class="container center">
-              <h1 class="heading-a">Registration Opens on March-20th </h1>
+              <h1 class="heading-a">Registration Opens on March-22th </h1>
               <!-- Countdown timer section -->
               <section class="countdown-timer">
                 <!-- Countdown for Days -->
@@ -246,12 +246,11 @@
         const minute = second * 60;
         const hour = minute * 60;
         const day = hour * 24;
-        const EVENTDATE = new Date('March 20, 2024, 00:00:00');
+        const EVENTDATE = new Date('March 22, 2024, 00:00:00');
         const countDown = new Date(EVENTDATE).getTime();
         const x = setInterval(() => {
           const now = new Date().getTime();
           const distance = countDown - now;
-          
           document.getElementById("days").innerText = Math.floor(distance / day);
           document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
           document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
