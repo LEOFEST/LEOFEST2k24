@@ -21,7 +21,7 @@ bars.addEventListener('click',function(){
   const day = hour * 24
       
   //INSERT EVENT DATE AND TIME HERE IN THIS FORMAT: 'March 20, 2024, 00:00:00'
-  const EVENTDATE = new Date('April 5, 2024, 00:00:00')
+  const EVENTDATE = new Date('April 6, 2024, 00:00:00')
   
   const countDown = new Date(EVENTDATE).getTime()
   const x = setInterval(() => {
